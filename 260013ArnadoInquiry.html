@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chairbnb - Inquiry</title>
+    <link rel="stylesheet" href="260013ArnadoEcommerce.css">
+</head>
+
+<body>
+
+    <nav>
+        <h1>Chairbnb</h1>
+
+        <div>
+            <a href="index.html">Home</a>
+            <a href="260013ArnadoProducts.html">Furniture</a>
+            <a href="260013ArnadoAccount.html">Account</a>
+            <a href="260013ArnadoInquiry.html">Contact Us</a>
+        </div>
+    </nav>
+
+    <section class="inquiry">
+
+        <div class="form-box">
+
+            <h2>Send an Inquiry</h2>
+
+            <p>
+                Interested in our furniture? Send us a message.
+            </p>
+
+            <form onsubmit="sendInquiry(); return false;">
+
+                <label for="inquiryName">Name</label>
+
+                <input type="text"
+                       id="inquiryName"
+                       placeholder="Enter your name">
+
+                <label for="inquiryEmail">Email</label>
+
+                <input type="email"
+                       id="inquiryEmail"
+                       placeholder="Enter your email">
+
+                <label for="product">Furniture</label>
+
+                <select id="product">
+
+                    <option value="">Choose furniture</option>
+                    <option value="Modern Chair">Modern Chair</option>
+                    <option value="Comfort Sofa">Comfort Sofa</option>
+                    <option value="Wooden Table">Wooden Table</option>
+                    <option value="Storage Cabinet">Storage Cabinet</option>
+
+                </select>
+
+                <label for="message">Message</label>
+
+                <textarea id="message"
+                          placeholder="Write your inquiry"></textarea>
+
+                <button type="submit">
+                    Send Inquiry
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Chairbnb. All Rights Reserved.</p>
+    </footer>
+
+    <script src="260013ArnadoEcommerce.js"></script>
+
+</body>
+</html>

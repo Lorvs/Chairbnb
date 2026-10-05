@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+    font-family:  'Playfair Display', serif;
+    background-color: #F2F7F3;
+    color: #244333;
+}
+
+nav {
+    background-color: #DCEBDD;
+    padding: 18px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #B8D0BC;
+}
+
+nav h1 {
+    margin: 0;
+    color: #286B45;
+}
+
+nav a {
+    color: #315C43;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #16834A;
+}
+
+.hero {
+    min-height: 500px;
+
+    background-image:
+        linear-gradient(rgba(35, 80, 50, 0.45), rgba(35, 80, 50, 0.45)),
+        url("furniture-background.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+button {
+    background-color: #3A9861;
+    color: white;
+    border: none;
+    padding: 11px 24px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #286B45;
+}
+
+.products {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.products h2 {
+    color: #286B45;
+    font-size: 30px;
+}
+
+.products > p {
+    color: #637A6B;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.product-card {
+    background-color: white;
+    width: 220px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #C5DCC9;
+    box-shadow: 0 4px 12px rgba(40, 90, 55, 0.1);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    border-color: #75B88E;
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product-card img:hover {
+    transform: scale(1.05);
+}
+
+.product-card h3 {
+    color: #315C43;
+}
+
+.product-card p {
+    color: #637A6B;
+}
+
+.price {
+    color: #25804B !important;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.about {
+    background-color: #E5F0E7;
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 1px solid #C5DCC9;
+}
+
+.about h2 {
+    color: #286B45;
+}
+
+.about p {
+    color: #637A6B;
+    max-width: 700px;
+    margin: 15px auto;
+    line-height: 1.7;
+}
+
+.account,
+.inquiry {
+    min-height: 550px;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.form-box {
+    background-color: white;
+    width: 350px;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #C5DCC9;
+    box-shadow: 0 5px 18px rgba(40, 90, 55, 0.1);
+}
+
+.form-box h2 {
+    text-align: center;
+    color: #286B45;
+}
+
+.form-box p {
+    color: #637A6B;
+    text-align: center;
+}
+
+.form-box label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #315C43;
+}
+
+.form-box input,
+.form-box select,
+.form-box textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px;
+    border: 1px solid #B8D0BC;
+    border-radius: 6px;
+    font-family: inherit;
+    background-color: #F8FBF8;
+}
+
+.form-box textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+.form-box input:focus,
+.form-box select:focus,
+.form-box textarea:focus {
+    outline: none;
+    border-color: #3A9861;
+}
+
+.form-box button {
+    width: 100%;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #DCEBDD;
+    color: #637A6B;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #B8D0BC;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.modal span {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .account {
+        flex-direction: column;
+    }
+
+}

@@ -76,7 +76,7 @@ function sendInquiry() {
             "\n\nMessage:\n" + message;
 
         window.location.href =
-            "mailto:chairbnb@gmail.com?subject=" +
+            "mailto:chairbnb14@gmail.com?subject=" +
             encodeURIComponent(subject) +
             "&body=" +
             encodeURIComponent(body);
